@@ -24,7 +24,7 @@ namespace Tyuiu.GurzanVM.Sprint3.Task0.V4
             Console.WriteLine("***************************************************************************");
 
             int startValue = 1;
-            int stopValue = 10;
+            int stopValue = 7;
 
             Console.WriteLine("Старт шага = " + startValue);
             Console.WriteLine("Конец шага = " +  stopValue);

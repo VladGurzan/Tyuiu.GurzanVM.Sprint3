@@ -12,11 +12,11 @@ namespace Tyuiu.GurzanVM.Sprint3.Task0.V4.Test
 
             
             int startValue = 1;
-            int stopValue = 10;
+            int stopValue = 7;
 
             double res = ds.GetMultiplySeries(startValue, startValue);
 
-            double wait = 1.0998334166468282;
+            double wait = 1.2096335443730357;
 
             Assert.AreEqual(wait, res);
         }

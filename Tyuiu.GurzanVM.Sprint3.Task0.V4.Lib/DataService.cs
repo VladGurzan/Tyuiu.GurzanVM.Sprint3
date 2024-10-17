@@ -7,12 +7,21 @@ namespace Tyuiu.GurzanVM.Sprint3.Task0.V4.Lib
         public double GetMultiplySeries(int startValue, int stopValue)
         {
             double sumSeries = 0;
-            int i;
+            int i = 1;
             for (i = startValue; i <= stopValue; i++)
             {
-                sumSeries = sumSeries + (Math.Sin(0.1) + i);
+                if (i == 1)
+                {
+                    sumSeries = sumSeries + ((Math.Sin(0.1) + i));
+                }
+                else
+                {
+                    sumSeries = sumSeries * ((Math.Sin(0.1) + i));
+                }
+            
+            
             }
             return sumSeries;   
-        }
+        }   
     }
 }
