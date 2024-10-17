@@ -21,7 +21,7 @@ namespace Tyuiu.GurzanVM.Sprint3.Task0.V4.Lib
             
             
             }
-            return sumSeries;   
+            return Math.Round (sumSeries, 3);   
         }   
     }
 }
