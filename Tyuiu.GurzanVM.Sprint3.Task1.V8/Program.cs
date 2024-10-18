@@ -25,7 +25,7 @@ namespace Tyuiu.GurzanVM.Sprint3.Task1.V8
 
             int startValue = 1;
             int stopValue = 7;
-            int value = 2;
+            double value = 0.25;
 
             Console.WriteLine("Значение X = " + value);
             Console.WriteLine("Старт шага = " + startValue);

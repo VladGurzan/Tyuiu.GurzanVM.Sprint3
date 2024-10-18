@@ -9,9 +9,9 @@ namespace Tyuiu.GurzanVM.Sprint3.Task1.V8.Test
         public void TestMethod1()
         {
             DataService ds = new DataService();
-            double value = 2;
-            int startValue = 4;
-            int stopValue = 1;
+            double value = 0.25;
+            int startValue = 1;
+            int stopValue = 7;
 
             double res = ds.GetSumSeries(value, startValue, stopValue);
             double wait = 1;

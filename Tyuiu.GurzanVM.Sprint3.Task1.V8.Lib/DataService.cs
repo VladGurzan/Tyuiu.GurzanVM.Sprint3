@@ -9,10 +9,11 @@ namespace Tyuiu.GurzanVM.Sprint3.Task1.V8.Lib
             double multSeries = 1;
             while (startValue <= stopValue)
             {
-                multSeries = multSeries + Math.Pow(startValue, (1 / Math.Cos(startValue) + Math.Pow(value, startValue)));
-                startValue++;
+                
+                multSeries = multSeries + (Math.Pow(1 / Math.Cos(startValue) + Math.Pow(value, startValue), startValue));
+                multSeries++;
             }
-            return multSeries;
-        }
+            return Math.Round (multSeries, 3);
+        }       
     }
 }
