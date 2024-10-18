@@ -23,11 +23,11 @@ namespace Tyuiu.GurzanVM.Sprint3.Task1.V8
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
+            double value = 0.25;
             int startValue = 1;
             int stopValue = 7;
-            double value = 0.25;
 
-            Console.WriteLine("Значение X = " + value);
+            Console.WriteLine("Переменная X = " +  value);
             Console.WriteLine("Старт шага = " + startValue);
             Console.WriteLine("Конец шага = " + stopValue);
 
@@ -35,8 +35,9 @@ namespace Tyuiu.GurzanVM.Sprint3.Task1.V8
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Произведение ряда = " + ds.GetSumSeries(value, startValue, stopValue));
+            Console.WriteLine("Сумма ряда = " + ds.GetSumSeries(value, startValue, stopValue));
             Console.ReadKey();
+
         }
     }
 }
