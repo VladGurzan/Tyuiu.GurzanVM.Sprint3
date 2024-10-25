@@ -1,6 +1,6 @@
-using Tyuiu.GurzanVM.Sprint3.Task0.V4.Lib;
+using Tyuiu.GurzanVM.Sprint3.Task2.V30.Lib;
 
-namespace Tyuiu.GurzanVM.Sprint3.Task0.V4.Test
+namespace Tyuiu.GurzanVM.Sprint3.Task2.V30.Test
 {
     [TestClass]
     public class DataServiceTest
@@ -10,13 +10,13 @@ namespace Tyuiu.GurzanVM.Sprint3.Task0.V4.Test
         {
             DataService ds = new DataService();
 
-            
+            double value = 5;
             int startValue = 1;
-            int stopValue = 7;
+            int stopValue = 11;
 
-            double res = ds.GetMultiplySeries(startValue, startValue);
+            double res = ds.GetMultiplySeries(value, startValue, startValue);
 
-            double wait = 1.1;
+            double wait = 27;
 
             Assert.AreEqual(wait, res);
         }
