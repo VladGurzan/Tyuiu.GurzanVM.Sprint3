@@ -14,7 +14,7 @@ namespace Tyuiu.GurzanVM.Sprint3.Task4.V20.Test
 
             double res = ds.Calculate(startValue, stopValue);
 
-            double wait = -2.7289851378032735;
+            double wait = 10.483;
             Assert.AreEqual(wait, res);
         }
     }

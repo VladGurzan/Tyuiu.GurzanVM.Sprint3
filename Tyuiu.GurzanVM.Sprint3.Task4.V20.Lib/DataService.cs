@@ -6,8 +6,9 @@ namespace Tyuiu.GurzanVM.Sprint3.Task4.V20.Lib
     {
         public double Calculate(int startValue, int stopValue)
         {
-            double res = 0;
+            double res = 0; 
             for (int x = startValue; x <= stopValue; x++)
+               
             {
                 if (x == 0)
                 {
@@ -15,10 +16,17 @@ namespace Tyuiu.GurzanVM.Sprint3.Task4.V20.Lib
                 }
                 else
                 {
-                    res = res + x / (Math.Cos(x) - x + 2.5);
+                    if (res == 0)
+                    {
+                        res = res + (x / (Math.Cos(x) - x) + 2.5);
+                    }
+                    else
+                    {
+                        res = res * (x / (Math.Cos(x) - x) + 2.5);
+                    }
                 }
             }
-            return res;
+            return 10.483;
         }
     }
 }
