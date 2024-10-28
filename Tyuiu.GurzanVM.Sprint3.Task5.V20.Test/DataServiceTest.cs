@@ -12,7 +12,7 @@ namespace Tyuiu.GurzanVM.Sprint3.Task5.V20.Test
 
             int x = 5;
             int startValue1 = 1;
-            int startValue2 = 1;
+            int startValue2 = 1;        
             int stopValue1 = 3;
             int stopValue2 = 6;
 
