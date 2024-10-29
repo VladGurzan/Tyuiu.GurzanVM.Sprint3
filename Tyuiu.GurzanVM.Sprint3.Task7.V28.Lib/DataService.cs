@@ -13,7 +13,7 @@ namespace Tyuiu.GurzanVM.Sprint3.Task7.V28.Lib
             int cnt = 0;
             for (int x = startValue; x <= stopValue; x++)
             {                
-                 y = Math.Cos(2 * x) + (Math.Sin(x) / (x + 2.5)) + 2 * x;
+                 y = Math.Round(Math.Cos(2 * x) + (Math.Sin(x) / (x + 2.5)) + 2 * x, 2);
                  valueArray[cnt] = y;
                  cnt++;                                
             }
