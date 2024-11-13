@@ -28,14 +28,15 @@ namespace Tyuiu.GurzanVM.Sprint3.Task4.V20
             int stopValue = 5;
 
             Console.WriteLine("Старт шага = " + startValue);
-            Console.WriteLine("Конец шага = " + startValue);
+            Console.WriteLine("Конец шага = " + stopValue);
 
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
+            Console.WriteLine("* Результат:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("сумма ряда = " + ds.Calculate(startValue, stopValue));
-            Console.ReadKey();
+            double res = Convert.ToDouble(ds.Calculate(startValue, stopValue));
+            Console.WriteLine(res);
+            Console.ReadLine();
         }
     }
 }

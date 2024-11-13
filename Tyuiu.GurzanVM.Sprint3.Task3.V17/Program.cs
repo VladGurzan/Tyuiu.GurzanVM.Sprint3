@@ -6,9 +6,6 @@ namespace Tyuiu.GurzanVM.Sprint3.Task3.V17
     {
         static void Main(string[] args)
         {
-            DataService ds = new DataService();
-
-
             Console.Title = "Спринт #3 | Выполнил: Гурзан.В.М  | СМАРТБ-24-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #3                                                               *");
@@ -24,17 +21,15 @@ namespace Tyuiu.GurzanVM.Sprint3.Task3.V17
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            string value = "vn98n! b,.";
-            char chr = 'a';
-
-            Console.WriteLine("Исходная строка = " + value);
-            Console.WriteLine("Исходная строка = " + chr);
+            DataService ds = new DataService();
+            string value = "*vn98n! b,";
+            int res = ds.ConvertStringToInt(value);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Полученная строка = " + ds.ConvertStringToInt(value));
+            Console.WriteLine("После удаления всех букв и знаков препинания, осталось только число: " + res);
             Console.ReadKey();
         }
     }

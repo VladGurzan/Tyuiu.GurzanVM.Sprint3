@@ -7,17 +7,16 @@ namespace Tyuiu.GurzanVM.Sprint3.Task3.V17.Lib
     {
         public int ConvertStringToInt(string value)
         {
-            string str = value;
-            string fr = "";
-            
-            foreach (char c in str)
+            string res = "";
+            foreach (char ch in value)
             {
-                if (Char.IsDigit(c))     
+                if (Char.IsDigit(ch))
                 {
-                    str += c;   
+                    res += ch;
                 }
             }
-            return 98;
+            int num = Int32.Parse(res);
+            return num;
 
         }
     }
