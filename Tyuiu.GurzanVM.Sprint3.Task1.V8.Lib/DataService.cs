@@ -7,25 +7,25 @@ namespace Tyuiu.GurzanVM.Sprint3.Task1.V8.Lib
         public double GetSumSeries(double value, int startValue, int stopValue)
         {
             double multSeries = 1;
-            while (startValue >= stopValue)
+            while (startValue <= stopValue)
             {
-                if (startValue == 1)
-                {
-                    multSeries = multSeries + (Math.Pow(1 / Math.Cos(startValue) + Math.Pow(value, startValue), startValue));
-                    multSeries++;
-                }
-                else
-                {
-                    multSeries = multSeries * (Math.Pow(1 / Math.Cos(startValue) + Math.Pow(value, startValue), startValue));
-                    multSeries++;
-                }
+                //if (multSeries == 1)
+                
+                    multSeries = multSeries * Math.Pow((1 / (Math.Cos(startValue) + Math.Pow(value, startValue))), startValue);
+                    startValue++;
+                
+                //else
+                //{
+                //    multSeries = multSeries * (Math.Pow(1 / Math.Cos(startValue) + Math.Pow(value, startValue), startValue));
+                //    startValue++;
+                //}
                 
             
             
             
             
             }
-            return -302185.684;
+            return multSeries;
         
         
         }

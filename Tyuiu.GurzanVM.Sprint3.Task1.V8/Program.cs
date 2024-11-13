@@ -12,8 +12,8 @@ namespace Tyuiu.GurzanVM.Sprint3.Task1.V8
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #3                                                               *");
             Console.WriteLine("* Тема: Оператор цикла for                                                *");
-            Console.WriteLine("* Задание #0                                                              *");
-            Console.WriteLine("* Вариант #4                                                              *");
+            Console.WriteLine("* Задание #1                                                              *");
+            Console.WriteLine("* Вариант #8                                                              *");
             Console.WriteLine("* Выполнил: Гурзан Владислав Михайлович |  СМАРТБ-24-1                    *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");

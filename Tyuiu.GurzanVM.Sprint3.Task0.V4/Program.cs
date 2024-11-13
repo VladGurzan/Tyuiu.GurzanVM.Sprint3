@@ -25,15 +25,17 @@ namespace Tyuiu.GurzanVM.Sprint3.Task0.V4
 
             int startValue = 1;
             int stopValue = 7;
+            double value = 0.25;
 
             Console.WriteLine("Старт шага = " + startValue);
             Console.WriteLine("Конец шага = " +  stopValue);
+            Console.WriteLine("Число X = " + value);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Сумма ряда = " + ds.GetMultiplySeries(startValue, stopValue));
+            Console.WriteLine("Сумма ряда = " + ds.GetMultiplySeries(startValue, stopValue, value));
             Console.ReadKey();
         
         
